@@ -4,7 +4,8 @@
 
 ## 使用插件文档
 ```
-vue-i18n:   http://kazupon.github.io/vue-i18n/en/installation.html
+vue-i18n:   http://kazupon.github.io/vue-i18n/en/installation.html
+   axios:   https://www.awesomes.cn/repo/mzabriskie/axios  
 ```
 
 ## Build Setup
