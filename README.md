@@ -2,6 +2,11 @@
 
 > A Vue.js project
 
+## 使用插件文档
+```
+vue-i18n:   http://kazupon.github.io/vue-i18n/en/installation.html
+```
+
 ## Build Setup
 
 ``` bash
