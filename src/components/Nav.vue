@@ -5,7 +5,7 @@
       <template slot="title" ><i class="el-icon-message"></i>我的创意</template>
       <el-menu-item index="/formPersonStore">个人表单</el-menu-item>
       <el-menu-item index="/musicStore">生命周期</el-menu-item>
-      <el-menu-item index="2-3">国际化</el-menu-item>
+      <el-menu-item index="/i18n">国际化</el-menu-item>
     </el-submenu>
     <el-menu-item index="/mdStore"><i class="el-icon-star-on"></i>满意度</el-menu-item>
   </el-menu>

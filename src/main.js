@@ -36,11 +36,30 @@ const store = new Vuex.Store({
 import axios from 'axios'
 Vue.prototype.$http = axios
 
+// ----------------------------------------------------------------------------------------------
+const messages = {
+  en: {
+    name: 'this is english name'
+  },
+  ja: {
+    name: 'こんにちは、世界'
+  }
+}
+import VueI18n from 'vue-i18n'
+Vue.use(VueI18n)
+const i18n = new VueI18n({
+  locale: 'ja',
+  messages
+})
+
+// ----------------------------------------------------------------------------------------------
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
   router: router,
-  store: store
+  store: store,
+  i18n
 })
