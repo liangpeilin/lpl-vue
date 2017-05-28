@@ -5,8 +5,12 @@
 ## 使用插件文档
 ```
   vue-i18n:         http://kazupon.github.io/vue-i18n/en/installation.html
-     axios:         https://www.awesomes.cn/repo/mzabriskie/axios  
+     axios:         https://www.awesomes.cn/repo/mzabriskie/axios
 element-ui:         http://element.eleme.io
+```
+## 其他:
+```
+  跨域选择代理设置方法：https://vuejs-templates.github.io/webpack/proxy.html
 ```
 
 ## Build Setup

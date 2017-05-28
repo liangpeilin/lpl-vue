@@ -1,5 +1,5 @@
 <template>
-  <el-button type="primary" @click="saveLocalStorage($store.state)">保存数据至云端<i class="el-icon-upload el-icon--right"></i></el-button>
+  <el-button type="primary" @click="saveLocalStorage($store.state)">{{$t('saveButtonName')}}<i class="el-icon-upload el-icon--right"></i></el-button>
 </template>
 
 <script>

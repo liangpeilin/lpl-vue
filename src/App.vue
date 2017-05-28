@@ -1,6 +1,6 @@
 <template>
     <el-col id="app"  class="tac" :span="24">
-      <h5>窒息工作室</h5>
+      <h5>{{$t('project')}}</h5>
       <el-col :span="6">
         <navComponents></navComponents>
       </el-col>
