@@ -81,7 +81,6 @@ const i18n = new VueI18n({
 })
 
 // ----------------------------------------------------------------------------------------------
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -89,5 +88,5 @@ new Vue({
   components: { App },
   router: router,
   store: store,
-  i18n
+  i18n: i18n
 })

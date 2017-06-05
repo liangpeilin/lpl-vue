@@ -4,6 +4,7 @@
       <p>mounted钩子___ 挂在完成后的生命周期钩子注册</p>
       <p>$nextTick___ 等待下一次更新完成后执行业务处理代码。</p>
       <p>axios___ 将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新</p>
+      <p>标注1：使用了vue的过滤器管道符号“|”</p>
       <img
         id="baiduImg"
         src="http://business.cdn.qianqian.com/qianqian/pic/bos_client_c49310115801d43d42a98fdc357f6057.jpg"
@@ -13,7 +14,7 @@
       <el-card :body-style="{ padding: '0px',margin:'0px'}">
         <img :src="item.pic_big"  class="image"/>
         <div style="padding: 14px;">
-          <span>{{ item.album_title }}</span>
+          <span>{{ item.album_title|capitalize }}</span>
           <div class="bottom clearfix">
             <time class="time">{{ item.artist_name }}</time>
           </div>
@@ -43,6 +44,11 @@
           console.log(err)
         })
       })
+    },
+    filters: {
+      capitalize: function (value) {
+        return value.substr(0, 9)
+      }
     }
   }
 </script>
