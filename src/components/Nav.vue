@@ -7,6 +7,7 @@
       <el-menu-item index="/musicStore">生命周期</el-menu-item>
       <el-menu-item index="/i18n">国际化</el-menu-item>
     </el-submenu>
+    <el-menu-item index="/layout_flex"><i class="el-icon-menu"></i>流布局</el-menu-item>
     <el-menu-item index="/echartsStore"><i class="el-icon-warning"></i>客户点击率统计</el-menu-item>
     <el-menu-item index="/mdStore"><i class="el-icon-star-on"></i>满意度</el-menu-item>
   </el-menu>

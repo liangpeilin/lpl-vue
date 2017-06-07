@@ -5,6 +5,7 @@ import FormPerson from '../components/FormPerson'
 import Music from '../components/Music'
 import I18n from '../components/I18n'
 import Echarts from '../components/echarts'
+import LayoutFlex from '../components/layout_flex'
 
 export default [
   {
@@ -41,6 +42,12 @@ export default [
     path: '/echartsStore',
     components: {
       default: Echarts
+    }
+  },
+  {
+    path: '/layout_flex',
+    components: {
+      default: LayoutFlex
     }
   }
 ]

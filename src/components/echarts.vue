@@ -1,5 +1,8 @@
 <template>
-  <div id="echarts" style="height: 500px;width: 500px;margin: 0 auto;"></div>
+  <div>
+    <div id="echarts" style="height: 500px;width: 500px;margin: 0 auto;"></div>
+    <div id="echarts2" style="height: 500px;width: 500px;margin: 0 auto;"></div>
+  </div>
 </template>
 
 <script>
@@ -44,6 +47,63 @@
         ]
       }
       myChart.setOption(option)
+//      asdasassssssssssssssssssssssssssssssssssssssssssssssssssss
+
+      option = {
+        title: {
+          text: '未来一周气温变化',
+          subtext: '纯属虚构'
+        },
+        tooltip: {
+          trigger: 'axis'
+        },
+        legend: {
+          data: ['最高气温']
+        },
+        toolbox: {
+          show: true,
+          feature: {
+            dataZoom: {},
+            dataView: {readOnly: true},
+            magicType: {type: ['line', 'bar']},
+            restore: {},
+            saveAsImage: {}
+          }
+        },
+        xAxis: {
+          type: 'category',
+          boundaryGap: false,
+          data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        },
+        yAxis: {
+          show: true,
+          type: 'value',
+          axisLabel: {
+            formatter: '{value}°C'
+          }
+        },
+        series: [
+          {
+            symbol: 'circle',
+            symbolSize: 20,
+            name: '最高气温',
+            type: 'line',
+            data: [10, 11, 15, 13, 12, 13, 10],
+            markPoint: {
+              data: [
+                {type: 'max', name: '最大值'}
+              ]
+            },
+            markLine: {
+              data: [
+                {type: 'average', name: '平均值'}
+              ]
+            }
+          }
+        ]
+      }
+      const myChart2 = echarts.init(document.getElementById('echarts2'))
+      myChart2.setOption(option)
     }
   }
 </script>
