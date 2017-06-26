@@ -1,4 +1,3 @@
-// import app from '../a'
 import ManYiDu from '../components/ManYiDu'
 import Carousel from '../components/Carousel'
 import FormPerson from '../components/FormPerson'
@@ -6,6 +5,9 @@ import Music from '../components/Music'
 import I18n from '../components/I18n'
 import Echarts from '../components/echarts'
 import LayoutFlex from '../components/layout_flex'
+import Order from '../components/Order'
+import practicalDemo from '../components/practicalDemo'
+import vueImportant from '../components/vueImportant'
 
 export default [
   {
@@ -48,6 +50,24 @@ export default [
     path: '/layout_flex',
     components: {
       default: LayoutFlex
+    }
+  },
+  {
+    path: '/orderStore',
+    components: {
+      default: Order
+    }
+  },
+  {
+    path: '/practicalDemoStore',
+    components: {
+      default: practicalDemo
+    }
+  },
+  {
+    path: '/vueImportant',
+    components: {
+      default: vueImportant
     }
   }
 ]

@@ -35,7 +35,13 @@ module.exports = {
       '/baiduMusic': {
         target: 'http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.billboard.billList&type=1&size=10&offset=0',
         pathRewrite: {
-          '^/baiduMusic': ''
+          '^/baiduMusic': '',
+        },
+      },
+      '/mock': {
+        target: 'http://localhost:3000/api/org/user/1',
+        pathRewrite: {
+          '^/mock': '',
         }
       }
     },

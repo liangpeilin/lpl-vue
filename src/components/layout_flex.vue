@@ -125,7 +125,6 @@
   .parent{
     margin: 10px;
     border: solid 1px;
-    display: -webkit-flex; /* Safari */
     display: flex;
     justify-content: left;
     flex-flow: row wrap;
@@ -134,7 +133,6 @@
   .box{
     margin: 10px;
     border: solid 1px;
-    display: -webkit-flex; /* Safari */
     display: flex;
     justify-content: left;
     flex-flow: row wrap-reverse;
@@ -145,6 +143,11 @@
     flex-basis: 100%;
     order: 0;
     margin-left: 20px;
+  }
+  #order button {
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 20px;
   }
   .label{
     order: 0;

@@ -38,24 +38,24 @@
         </el-form-item>
       </el-col>
     </el-form-item>
-    <el-form-item label="即时配送" prop="delivery">
-      <el-switch on-text="" off-text="" v-model="computed_delivery"></el-switch>
+    <el-form-item label="单身中" prop="delivery">
+      <el-switch on-text="" off-text="" v-model="computed_isSingle"></el-switch>
     </el-form-item>
-    <el-form-item label="活动性质" prop="type">
+    <el-form-item label="性格特征" prop="type">
       <el-checkbox-group v-model="computed_type">
-        <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
-        <el-checkbox label="地推活动" name="type"></el-checkbox>
-        <el-checkbox label="线下主题活动" name="type"></el-checkbox>
-        <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+        <el-checkbox label="贱人双子" name="type"></el-checkbox>
+        <el-checkbox label="顾家巨蟹" name="type"></el-checkbox>
+        <el-checkbox label="败家狮子" name="type"></el-checkbox>
+        <el-checkbox label="沉稳金牛" name="type"></el-checkbox>
       </el-checkbox-group>
     </el-form-item>
-    <el-form-item label="特殊资源" prop="resource">
+    <el-form-item label="社会身份" prop="resource">
       <el-radio-group v-model="computed_resource">
-        <el-radio label="线上品牌商赞助"></el-radio>
-        <el-radio label="线下场地免费"></el-radio>
+        <el-radio label="有钱仔"></el-radio>
+        <el-radio label="不羁男"></el-radio>
       </el-radio-group>
     </el-form-item>
-    <el-form-item label="活动形式" prop="desc">
+    <el-form-item label="个人简介" prop="desc">
       <el-input type="textarea" v-model="computed_desc"></el-input>
     </el-form-item>
     <el-form-item>
@@ -127,12 +127,12 @@
           this.$store.commit('setFormPerson_date2', value)
         }
       },
-      computed_delivery: {
+      computed_isSingle: {
         get () {
-          return this.getFormPerson.delivery
+          return this.getFormPerson.isSingle
         },
         set (value) {
-          this.$store.commit('setFormPerson_delivery', value)
+          this.$store.commit('setFormPerson_isSingle', value)
         }
       },
       computed_type: {

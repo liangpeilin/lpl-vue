@@ -1,11 +1,11 @@
 <template>
     <el-col id="app"  class="tac" :span="24">
-      <h5>{{$t('project')}}</h5>
+      <h5>{{$t('project')}} {{seconds}}</h5>
       <el-col :span="6">
         <navComponents></navComponents>
       </el-col>
       <el-col :span="18">
-        <router-view></router-view>
+        <router-view :parentData="seconds"></router-view>
       </el-col>
       <el-col :span="24" class="lpl-bottom">
         <saveButton></saveButton>
@@ -22,6 +22,20 @@
     components: {
       navComponents: navComponents,
       saveButton: saveButton
+    },
+    data: function () {
+      return {
+        seconds: new Date().getTime()
+      }
+    },
+    mounted: function () {
+      const that = this
+      setInterval(
+        function () {
+          that.seconds = new Date().getTime()
+        },
+        1000
+      )
     }
   }
 </script>

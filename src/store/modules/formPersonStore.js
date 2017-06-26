@@ -9,7 +9,7 @@ const formPersonStore = {
       region: '',
       date1: new Date(),
       date2: new Date(),
-      delivery: false,
+      isSingle: false,
       type: [],
       resource: '',
       desc: ''
@@ -29,7 +29,7 @@ const formPersonStore = {
         { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
       ],
       type: [
-        { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
+        { type: 'array', required: true, message: '请选择一种突出特征', trigger: 'change' }
       ],
       resource: [
         { required: true, message: '请选择活动资源', trigger: 'change' }
@@ -70,8 +70,8 @@ const formPersonStore = {
     setFormPerson_date2: (state, payload) => {
       state.formPerson.date2 = payload
     },
-    setFormPerson_delivery: (state, payload) => {
-      state.formPerson.delivery = payload
+    setFormPerson_isSingle: (state, payload) => {
+      state.formPerson.isSingle = payload
     },
     setFormPerson_type: (state, payload) => {
       state.formPerson.type = payload
@@ -87,7 +87,7 @@ const formPersonStore = {
       state.formPerson.region = ''
       state.formPerson.date1 = new Date()
       state.formPerson.date2 = new Date()
-      state.formPerson.delivery = false
+      state.formPerson.isSingle = false
       state.formPerson.type = []
       state.formPerson.resource = ''
       state.formPerson.desc = ''
