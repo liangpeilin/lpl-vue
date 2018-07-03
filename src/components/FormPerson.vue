@@ -6,7 +6,7 @@
       background:#ffffff;
       border-radius: 50px;">
       </canvas>
-      <img v-else="computed_headImg !== ''" :src="computed_headImg" width="100" height="100" style="
+      <img v-else :src="computed_headImg" width="100" height="100" style="
       border:1px solid #d3d3d3;
       background:#ffffff;
       border-radius: 50px;"/>

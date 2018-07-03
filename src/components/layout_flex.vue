@@ -2,7 +2,7 @@
   <div class="parent">
     <div id="order" ref="profile">
       <p>AQ1033 2017-4-21 广州-北京</p>
-      <button @click="p2pew" v-for="(value, key) in persons" class="toggle1" :name="value">{{value}}</button>
+      <button @click="p2pew" v-for="(value, key) in persons" :key="key" class="toggle1" :name="value">{{value}}</button>
     </div>
     <div class="label">
       <div>
@@ -21,19 +21,19 @@
     <div class="box">
       <div class="item">
         <h3>A</h3>
-        <div v-for="(value, key) in pews[0]">
+        <div v-for="(value, key) in pews[0]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem" ></div>
         </div>
       </div>
       <div class="item">
         <h3>B</h3>
-        <div v-for="(value, key) in pews[1]">
+        <div v-for="(value, key) in pews[1]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem" ></div>
         </div>
       </div>
       <div class="item">
         <h3>C</h3>
-        <div v-for="(value, key) in pews[2]">
+        <div v-for="(value, key) in pews[2]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem" ></div>
         </div>
       </div>
@@ -50,19 +50,19 @@
       <!--分界线..............................................-->
       <div class="item">
         <h3>D</h3>
-        <div v-for="(value, key) in pews[3]">
+        <div v-for="(value, key) in pews[3]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem" ></div>
         </div>
       </div>
       <div class="item">
         <h3>E</h3>
-        <div v-for="(value, key) in pews[4]">
+        <div v-for="(value, key) in pews[4]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem"></div>
         </div>
       </div>
       <div class="item">
         <h3>F</h3>
-        <div v-for="(value, key) in pews[5]">
+        <div v-for="(value, key) in pews[5]" :key="key">
           <div :class="('i'+value)" :id="key" @click="selectItem" ></div>
         </div>
       </div>

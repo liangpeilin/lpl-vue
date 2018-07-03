@@ -11,7 +11,7 @@
         <el-radio :label="4">赵奕欢</el-radio>
       </el-radio-group>
       <div>
-        <div v-for="(item, index) in dataArray">
+        <div v-for="(item, index) in dataArray" :key="index">
           <h3 @click="switchShow(index)">乘机人{{index+1}} <i :class="item.form.icon[0]"></i></h3>
           <el-form  :model="item" label-width="80px" v-if="item.form.isShow">
             <el-form-item label="旅客类型 :">{{item.form.person}}</el-form-item>
@@ -70,10 +70,8 @@
 </template>
 
 <script>
-  import ElInput from '../../node_modules/element-ui/packages/input/src/input'
 
   export default {
-    components: {ElInput},
     data: function () {
       return {
         pickerOptions0: {

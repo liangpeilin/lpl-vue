@@ -17,10 +17,10 @@
 </template>
 <script>
   import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
-  import ElMenuItem from '../../node_modules/element-ui/packages/menu/src/menu-item'
+  // import ElMenuItem from '../../node_modules/element-ui/packages/menu/src/menu-item'
 
   export default {
-    components: {ElMenuItem},
+    // components: {ElMenuItem},
     data () {
       return {
         activeIndex: ''

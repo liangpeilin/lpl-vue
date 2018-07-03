@@ -44,18 +44,7 @@
 <script>
   import _ from 'lodash'
   import TWEEN from '@tweenjs/tween.js'
-  import ElButtonGroup from '../../node_modules/element-ui/packages/button/src/button-group'
-  import ElRow from 'element-ui/packages/row/src/row'
-  import ElForm from '../../node_modules/element-ui/packages/form/src/form'
-  import ElCard from '../../node_modules/element-ui/packages/card/src/main'
-  import ElCol from 'element-ui/packages/col/src/col'
   export default {
-    components: {
-      ElCol,
-      ElCard,
-      ElForm,
-      ElRow,
-      ElButtonGroup},
     data: function () {
       return {
         watchMsg: '',
